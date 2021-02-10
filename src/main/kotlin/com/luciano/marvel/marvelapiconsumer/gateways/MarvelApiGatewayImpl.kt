@@ -1,7 +1,6 @@
 package com.luciano.marvel.marvelapiconsumer.gateways
 
 import com.luciano.marvel.marvelapiconsumer.domain.ApiResult
-import com.luciano.marvel.marvelapiconsumer.domain.MarvelCharacter
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.http.MediaType
 import org.springframework.stereotype.Component

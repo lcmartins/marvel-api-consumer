@@ -1,3 +1,13 @@
 marvel:
   api:
     characters: "http://gateway.marvel.com/v1/public/characters"
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://[user]:[password]@cluster0.a6nhy.mongodb.net/marvelapiconsumer?retryWrites=true&w=majority
+  main:
+    allow-bean-definition-overriding: true
+security:
+  jwt:
+    expiration: 7200000
+    signatureKey: T2NAdmFsb0RuIXAwTGVhMMOpQnJATmMwdlhQdG8pMC05MDFsVVhMMW45NTRsIyU3ZmRrZERMeHBvdE9UYlU3NiY3ODIoKiVsdm9IQzBvbm4xOTNrWHd5fXs9amYmNDlPbGtqSkBrJCprb2lYeHQoODc4bGFzZXImNmtkZjJLRmtmZGZKSy0wMi0r
