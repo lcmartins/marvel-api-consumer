@@ -25,7 +25,7 @@ class UserController(
     val JWTService: JWTService,
     val authenticationManager: ReactiveAuthenticationManager
 ) {
-    @PostMapping("signupq")
+    @PostMapping("signup")
     fun create(@RequestBody @Valid userPostRequest: UserPostRequest): ResponseEntity<Mono<ApiUser>> {
         val userCreated = createUserImpl.execute(toEntity(userPostRequest))
         return ResponseEntity(userCreated, HttpStatus.CREATED)
